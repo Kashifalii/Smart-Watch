@@ -1,6 +1,6 @@
 "use client";
 
-import SwiperComp from "./swiper/page";
+import SwiperComp from "../Components/swiper/page";
 
 export default function App() {
   return (

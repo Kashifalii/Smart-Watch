@@ -2,10 +2,12 @@ import Image from "next/image";
 import React from "react";
 
 import clock from "@/public/Images/c1.webp";
+import Link from "next/link";
+import { MoveRight } from "lucide-react";
 
 function HomePage() {
   return (
-    <section className="w-full h-screen ">
+    <section className="w-full h-screen bg-[linear-gradient(145deg,rgba(39,39,39,0.7)_50%,rgba(217,70,96,0.94)_50%)]">
       <div className="container mx-auto px-4">
         <Image
           alt="Clock Image"
@@ -27,15 +29,21 @@ function HomePage() {
             </h3>
           </div>
           {/* right */}
-          <div className="w-1/2 h-auto flex flex-col items-end">
+          <div className="w-1/2 h-auto flex flex-col items-end translate-y-12">
             <h1 className="text-[243px] font-oswald font-semibold text-white leading-48 ps">
               WATCH
             </h1>
-            <p className="max-w-[451px] w-full text-xl font-sans font-light text-white mt-8 text-end">
+            <p className="max-w-[451px]  w-full text-xl font-sans font-light text-white mt-8 text-end">
               Discover watches crafted for those who value elegance,
               performance, and lasting quality. Designed to elevate every
               moment.
             </p>
+            <Link
+              href={"#"}
+              className="text-[42px] font-oswald font-semibold text-white"
+            >
+              Order Now <MoveRight className="inline size-10" />
+            </Link>
           </div>
         </div>
       </div>

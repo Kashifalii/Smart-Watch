@@ -1,5 +1,4 @@
 "use client";
-import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -8,8 +7,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Navigation } from "swiper/modules";
-import HomePage from "../pages/home";
-import { style } from "framer-motion/client";
+import HomePage from "../../pages/home";
 
 export default function SwiperComp() {
   return (
