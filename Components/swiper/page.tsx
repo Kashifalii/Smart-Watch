@@ -2,17 +2,13 @@
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import {
-  ChevronRight,
-  CircleArrowRight,
-  CircleChevronLeft,
-  CircleChevronRight,
-} from "lucide-react";
+import { CircleChevronLeft, CircleChevronRight } from "lucide-react";
 
 import "swiper/css";
 
 import HomePage from "../../pages/home";
 import AboutPage from "@/pages/about";
+import ProductPage from "@/pages/product";
 
 export default function SwiperComp() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -60,6 +56,10 @@ export default function SwiperComp() {
         <SwiperSlide>
           <AboutPage isActive={activeIndex === 1} />
         </SwiperSlide>
+        <SwiperSlide>
+          <ProductPage isActive={activeIndex === 2} />
+        </SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
       </Swiper>
     </div>
