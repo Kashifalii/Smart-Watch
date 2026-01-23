@@ -29,7 +29,7 @@ function HomePage({ isActive }: { isActive: boolean }) {
           transition={{ duration: 1.1 }}
           alt="Clock Image"
           src="/Images/Ellipse.png"
-          className="w-[675px]  h-[88px] absolute z-10 left-1/2 -bottom-5 transform -translate-x-1/2 -translate-y-1/2 "
+          className="w-168.75  h-22 absolute z-10 left-1/2 -bottom-5 transform -translate-x-1/2 -translate-y-1/2 "
         />
 
         {/* text-wrapper */}
