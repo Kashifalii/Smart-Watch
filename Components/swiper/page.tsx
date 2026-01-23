@@ -1,7 +1,7 @@
 "use client";
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, EffectFade } from "swiper/modules";
 import { CircleChevronLeft, CircleChevronRight } from "lucide-react";
 
 import "swiper/css";
@@ -36,8 +36,12 @@ export default function SwiperComp() {
       </button>
 
       <Swiper
-        speed={1000}
-        modules={[Navigation]}
+        effect="fade"
+        fadeEffect={{ crossFade: true }}
+        speed={1400}
+        allowTouchMove={true}
+        /* MODULES */
+        modules={[Navigation, EffectFade]}
         onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
         navigation={{
           prevEl: prevRef.current,

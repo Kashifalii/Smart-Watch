@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 function AboutPage({ isActive }: { isActive: boolean }) {
   return (
-    <section>
-      <div className="container mx-auto px-4 overflow-hidden">
+    <section className=" overflow-hidden">
+      <div className="container mx-auto px-4">
         {/* main-Wrraper */}
         <div className="flex items-center w-full h-screen">
           {/* left */}
@@ -19,7 +19,7 @@ function AboutPage({ isActive }: { isActive: boolean }) {
                 ? { scale: 1, rotate: 0, opacity: 1 }
                 : { scale: 0, rotate: -180, opacity: 0 }
             }
-            transition={{ duration: 1.1 }}
+            transition={{ duration: 1.2 }}
           >
             <Image
               src={clock}
@@ -37,7 +37,7 @@ function AboutPage({ isActive }: { isActive: boolean }) {
                 animate={
                   isActive ? { y: 0, opacity: 1 } : { y: -200, opacity: 0 }
                 }
-                transition={{ duration: 1.1 }}
+                transition={{ duration: 1.2 }}
               >
                 ABOUT <span className="text-red">THE</span>
                 <br />
@@ -49,7 +49,7 @@ function AboutPage({ isActive }: { isActive: boolean }) {
                 animate={
                   isActive ? { y: 0, opacity: 1 } : { y: 300, opacity: 0 }
                 }
-                transition={{ duration: 1.1 }}
+                transition={{ duration: 1.2 }}
               >
                 At <strong>ChronoX</strong>, we believe a watch is more than a
                 timepiece — it’s a statement. Each design blends precision
@@ -66,7 +66,7 @@ function AboutPage({ isActive }: { isActive: boolean }) {
               className="w-1/2 h-auto flex flex-col gap-6 items-baseline"
               initial={{ x: 400, opacity: 0 }}
               animate={isActive ? { x: 0, opacity: 1 } : { x: 400, opacity: 0 }}
-              transition={{ duration: 1.1 }}
+              transition={{ duration: 1.2 }}
             >
               <p className="text-para font-sans text-xl font-normal">
                 Each design blends precision engineering with refined aesthetics
