@@ -19,6 +19,19 @@ function HomePage({ isActive }: { isActive: boolean }) {
           src="/Images/c1.webp"
           className="w-187 h-187 absolute z-10 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 object-cover"
         />
+        <motion.img
+          initial={{ scale: 0, y: 100, opacity: 0 }}
+          animate={
+            isActive
+              ? { scale: 1, y: 0, opacity: 1 }
+              : { scale: 0, y: 100, opacity: 0 }
+          }
+          transition={{ duration: 1.1 }}
+          alt="Clock Image"
+          src="/Images/Ellipse.png"
+          className="w-[675px]  h-[88px] absolute z-10 left-1/2 -bottom-5 transform -translate-x-1/2 -translate-y-1/2 "
+        />
+
         {/* text-wrapper */}
         <div className="h-screen w-full flex items-center">
           {/* left */}
@@ -48,7 +61,7 @@ function HomePage({ isActive }: { isActive: boolean }) {
             <h1 className="text-[243px] font-oswald font-semibold text-black leading-48 ps">
               WATCH
             </h1>
-            <p className="max-w-[451px]  w-full text-xl font-sans font-light text-white mt-8 text-end">
+            <p className="max-w-112.75 w-full text-xl font-sans font-light text-white mt-8 text-end">
               Discover watches crafted for those who value elegance,
               performance, and lasting quality. Designed to elevate every
               moment.

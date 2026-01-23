@@ -12,6 +12,7 @@ import {
 import "swiper/css";
 
 import HomePage from "../../pages/home";
+import AboutPage from "@/pages/about";
 
 export default function SwiperComp() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -56,7 +57,9 @@ export default function SwiperComp() {
           <HomePage isActive={activeIndex === 0} />
         </SwiperSlide>
 
-        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>
+          <AboutPage isActive={activeIndex === 1} />
+        </SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
       </Swiper>
     </div>
