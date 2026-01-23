@@ -15,7 +15,8 @@
   --color-para: #C8C8C8;
 
   /* shadows */
-  --shadow-main: 5px 5px 4px #C8C8C8;
+  --shadow-main: 5px 5px 4px rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0px 0px 4px rgba(0, 0, 0, 0.3);
 }
 
 .bg-noise {
