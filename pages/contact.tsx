@@ -8,11 +8,8 @@ function ContactPage({ isActive }: { isActive: boolean }) {
         {/* content wrapper */}
         <div className="flex items-center h-screen w-full">
           {/* form */}
-          <div className="h-175">
-            <form
-              action="#"
-              className="w-full max-w-162.5 h-full  bg-white rounded-ss-lg rounded-es-lg p-10"
-            >
+          <div className="h-175 w-[60%] bg-white rounded-ss-xl rounded-es-xl">
+            <form action="#" className="w-full max-w-162.5 h-ful p-10">
               <div className="mb-7">
                 <h1 className="text-black text-[46px] font-oswald font-semibold leading-11.25">
                   LET’S <span className="text-red">CONNECT</span>
@@ -27,7 +24,7 @@ function ContactPage({ isActive }: { isActive: boolean }) {
                 </p>
               </div>
               {/* inputs-wrapper */}
-              <div className="flex flex-col gap-2.5 w-full">
+              <div className="flex flex-col gap-3 w-full">
                 {/* name-input */}
                 <div className="flex items-center justify-between w-full">
                   {/* first-name */}
@@ -43,7 +40,7 @@ function ContactPage({ isActive }: { isActive: boolean }) {
                       name="firstName"
                       placeholder="First name"
                       id="firstName"
-                      className="border-2 border-gray-200 focus:outline-red/50 font-sans text-sm text-black rounded-md w-full p-2"
+                      className="border-2 border-gray-200 focus:outline-red/50 font-sans text-sm text-black rounded-md w-full px-2 py-3"
                     />
                   </div>
                   {/* last-name */}
@@ -59,7 +56,7 @@ function ContactPage({ isActive }: { isActive: boolean }) {
                       name="lastName"
                       placeholder="Last name"
                       id="lastName"
-                      className="border-2 border-gray-200 focus:outline-red/50 font-sans text-sm text-black rounded-md w-full p-2"
+                      className="border-2 border-gray-200 focus:outline-red/50 font-sans text-sm text-black rounded-md w-full px-2 py-3"
                     />
                   </div>
                 </div>
@@ -76,7 +73,7 @@ function ContactPage({ isActive }: { isActive: boolean }) {
                     name="email"
                     placeholder="Email address"
                     id="email"
-                    className="border-2 border-gray-200 focus:outline-red/50 font-sans text-sm text-black rounded-md w-full p-2"
+                    className="border-2 border-gray-200 focus:outline-red/50 font-sans text-sm text-black rounded-md w-full px-2 py-3"
                   />
                 </div>
                 {/* phone number */}
@@ -112,7 +109,7 @@ function ContactPage({ isActive }: { isActive: boolean }) {
                     id="message"
                     placeholder="A brief summary of what you need help with, expected, timelines, preferred communication method etc.  "
                     rows={4}
-                    className="border-2 border-gray-200 focus:outline-red/50  text-sm text-black rounded-md w-full p-2 resize-none font-sans placeholder:text-sm placeholder:text-gray-para"
+                    className="border-2 border-gray-200 focus:outline-red/50  text-sm text-black rounded-md w-full px-2 py-3 resize-none font-sans placeholder:text-sm placeholder:text-gray-para"
                   />
                 </div>
                 {/* send btn */}
@@ -125,6 +122,15 @@ function ContactPage({ isActive }: { isActive: boolean }) {
                 </button>
               </div>
             </form>
+          </div>
+          {/* image & details */}
+          <div className="h-175 w-[40%] rounded-e-xl rounded-be-xl bg-[url('/Images/form-bg.png')] flex items-end">
+            {/* contact-details */}
+            <div className="w-full h-auto p-7 bg-[url('/Images/form-overlay.png')] bg-[#0000003b]">
+              <h3 className="text-white text-[40px] font-oswald font-semibold">
+                CONTACT DETAILS
+              </h3>
+            </div>
           </div>
         </div>
       </div>
