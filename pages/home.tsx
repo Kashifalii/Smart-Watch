@@ -68,7 +68,7 @@ function HomePage({ isActive }: { isActive: boolean }) {
             </p>
             <a
               href={"#"}
-              className="text-[42px] font-oswald font-semibold text-white"
+              className="text-[42px] font-oswald font-semibold text-white cursor-pointer"
             >
               Order Now <MoveRight className="inline size-10" />
             </a>

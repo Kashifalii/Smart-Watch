@@ -10,6 +10,7 @@ import HomePage from "../../pages/home";
 import AboutPage from "@/pages/about";
 import ProductPage from "@/pages/product";
 import Testimonial from "@/pages/testimonial";
+import ContactPage from "@/pages/contact";
 
 export default function SwiperComp() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -67,7 +68,9 @@ export default function SwiperComp() {
         <SwiperSlide>
           <Testimonial isActive={activeIndex === 3} />
         </SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>
+          <ContactPage isActive={activeIndex === 4} />
+        </SwiperSlide>
       </Swiper>
     </div>
   );

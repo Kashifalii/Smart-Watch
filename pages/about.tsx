@@ -81,7 +81,7 @@ function AboutPage({ isActive }: { isActive: boolean }) {
               </p>
               <a
                 href={"#"}
-                className="text-[36px] font-oswald font-normal text-white"
+                className="text-[36px] font-oswald font-normal text-white cursor-pointer"
               >
                 Learn More <MoveRight className="inline size-10" />
               </a>
