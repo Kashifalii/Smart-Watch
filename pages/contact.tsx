@@ -1,3 +1,4 @@
+import { SendHorizontal } from "lucide-react";
 import React from "react";
 
 function ContactPage({ isActive }: { isActive: boolean }) {
@@ -7,8 +8,123 @@ function ContactPage({ isActive }: { isActive: boolean }) {
         {/* content wrapper */}
         <div className="flex items-center h-screen w-full">
           {/* form */}
-          <div className="flex w-full h-175 bg-white rounded-lg overflow-hidden shadow-sm">
-            <form action="#"></form>
+          <div className="h-175">
+            <form
+              action="#"
+              className="w-full max-w-162.5 h-full  bg-white rounded-ss-lg rounded-es-lg p-10"
+            >
+              <div className="mb-7">
+                <h1 className="text-black text-[46px] font-oswald font-semibold leading-11.25">
+                  LET’S <span className="text-red">CONNECT</span>
+                </h1>
+                <h4 className="text-base text-black font-sans font-medium mb-1">
+                  Have a question? We’re here to help.
+                </h4>
+                <p className="text-sm text-gray-600 font-sans font-normal w-full max-w-150">
+                  Whether you’re looking for product details, order support, or
+                  general inquiries, our team is ready to assist you. Reach out
+                  to us and we’ll get back to you as soon as possible.
+                </p>
+              </div>
+              {/* inputs-wrapper */}
+              <div className="flex flex-col gap-2.5 w-full">
+                {/* name-input */}
+                <div className="flex items-center justify-between w-full">
+                  {/* first-name */}
+                  <div className="w-[48%]">
+                    <label
+                      htmlFor="firstName"
+                      className="block mb-1 text-sm font-medium text-black font-sans"
+                    >
+                      First Name*
+                    </label>
+                    <input
+                      type="text"
+                      name="firstName"
+                      placeholder="First name"
+                      id="firstName"
+                      className="border-2 border-gray-200 focus:outline-red/50 font-sans text-sm text-black rounded-md w-full p-2"
+                    />
+                  </div>
+                  {/* last-name */}
+                  <div className="w-[48%]">
+                    <label
+                      htmlFor="lastName"
+                      className="block mb-1 text-sm font-medium text-black font-sans"
+                    >
+                      Last Name*
+                    </label>
+                    <input
+                      type="text"
+                      name="lastName"
+                      placeholder="Last name"
+                      id="lastName"
+                      className="border-2 border-gray-200 focus:outline-red/50 font-sans text-sm text-black rounded-md w-full p-2"
+                    />
+                  </div>
+                </div>
+                {/* email */}
+                <div className="w-full">
+                  <label
+                    htmlFor="email"
+                    className="block mb-1 text-sm font-medium text-black font-sans"
+                  >
+                    Email*
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email address"
+                    id="email"
+                    className="border-2 border-gray-200 focus:outline-red/50 font-sans text-sm text-black rounded-md w-full p-2"
+                  />
+                </div>
+                {/* phone number */}
+                <div className="w-full">
+                  <label className="block mb-1 text-sm font-medium text-black font-sans">
+                    Phone number
+                  </label>
+                  <div className="relative mt-2 text-black font-sans">
+                    <div className="absolute inset-y-0 left-3 my-auto h-6 flex items-center border-r-2 border-gray-200 focus:outline-red/50 font-sans text-sm text-black pr-2">
+                      <select className="text-sm outline-none rounded-lg h-full">
+                        <option>US</option>
+                        <option>ES</option>
+                        <option>MR</option>
+                      </select>
+                    </div>
+                    <input
+                      type="number"
+                      placeholder="+1 (555) 000-000"
+                      className="w-full pl-18 pr-3 py-2  border-2 border-gray-200 focus:outline-red/50 font-sans text-sm text-black rounded-md"
+                    />
+                  </div>
+                </div>
+                {/* message */}
+                <div className="w-full">
+                  <label
+                    htmlFor="message"
+                    className="block mb-1 text-sm font-medium text-black font-sans"
+                  >
+                    How can we help?
+                  </label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="A brief summary of what you need help with, expected, timelines, preferred communication method etc.  "
+                    rows={4}
+                    className="border-2 border-gray-200 focus:outline-red/50  text-sm text-black rounded-md w-full p-2 resize-none font-sans placeholder:text-sm placeholder:text-gray-para"
+                  />
+                </div>
+                {/* send btn */}
+
+                <button
+                  type="submit"
+                  className="cursor-pointer transition-all bg-red hover:bg-red/95 text-base font-semibold text-white font-sans w-fit ms-auto px-8 py-3 rounded-md flex items-center gap-1 hover:shadow-center"
+                >
+                  Send <SendHorizontal strokeWidth={2} size={16} />
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
