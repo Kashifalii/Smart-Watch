@@ -1,14 +1,26 @@
-import { SendHorizontal } from "lucide-react";
+import {
+  Earth,
+  Headset,
+  Mails,
+  MapPinHouse,
+  SendHorizontal,
+} from "lucide-react";
 import React from "react";
+import { motion } from "framer-motion";
 
 function ContactPage({ isActive }: { isActive: boolean }) {
   return (
-    <section className="w-full h-screen">
+    <section className="w-full h-screen bg-[linear-gradient(-154deg,rgba(39,39,39,0.7)_50%,rgba(217,70,96,0.08)_50%)]">
       <div className="container mx-auto px-4">
         {/* content wrapper */}
         <div className="flex items-center h-screen w-full">
           {/* form */}
-          <div className="h-175 w-[60%] bg-white rounded-ss-xl rounded-es-xl">
+          <motion.div
+            initial={{ x: -500, opacity: 0 }}
+            animate={isActive ? { x: 0, opacity: 1 } : { x: -500, opacity: 0 }}
+            transition={{ duration: 1.2 }}
+            className="h-175 w-[60%] bg-white rounded-ss-xl rounded-es-xl"
+          >
             <form action="#" className="w-full max-w-162.5 h-ful p-10">
               <div className="mb-7">
                 <h1 className="text-black text-[46px] font-oswald font-semibold leading-11.25">
@@ -122,16 +134,87 @@ function ContactPage({ isActive }: { isActive: boolean }) {
                 </button>
               </div>
             </form>
-          </div>
+          </motion.div>
+
           {/* image & details */}
-          <div className="h-175 w-[40%] rounded-e-xl rounded-be-xl bg-[url('/Images/form-bg.png')] flex items-end">
+          <motion.div
+            initial={{ x: 500, opacity: 0 }}
+            animate={isActive ? { x: 0, opacity: 1 } : { x: 500, opacity: 0 }}
+            transition={{ duration: 1.2 }}
+            className="h-175 w-[40%] rounded-e-xl rounded-be-xl bg-[url('/Images/form-bg.png')] flex items-end"
+          >
             {/* contact-details */}
-            <div className="w-full h-auto p-7 bg-[url('/Images/form-overlay.png')] bg-[#0000003b]">
-              <h3 className="text-white text-[40px] font-oswald font-semibold">
-                CONTACT DETAILS
+            <div className="w-full h-auto p-7 bg-[url('/Images/form-overlay.png')] bg-[#05050571] backdrop-blur-sm">
+              <h3 className="text-white text-[30px] font-oswald font-medium uppercase">
+                Contact <span className="text-red">&</span> Inquiries
               </h3>
+              <p className="text-[#e2e2e2] text-sm font-sans mb-10 ">
+                Reach out with your inquiries and we’ll respond shortly.
+              </p>
+              {/* details */}
+              <div className="flex  justify-between gap-y-7 flex-wrap w-full h-auto">
+                {/* Phone */}
+                <div className="w-[48%] flex gap-2">
+                  <Headset strokeWidth={1.5} className="text-white" size={38} />
+                  <div>
+                    <h3 className="text-red text-xl font-oswald font-semibold mb-0.5">
+                      Customer Support
+                    </h3>
+                    <p className="text-sm text-white font-sans font-light">
+                      +1 (555) 256-5545
+                    </p>
+                  </div>
+                </div>
+                {/* Location */}
+                <div className="w-[48%] flex gap-2">
+                  <MapPinHouse
+                    strokeWidth={1.5}
+                    className="text-white"
+                    size={38}
+                  />
+                  <div>
+                    <h3 className="text-red text-xl font-oswald font-semibold mb-0.5">
+                      Headquaters Location
+                    </h3>
+                    <p className="text-sm text-white font-sans font-light">
+                      Salt Lake City, USA
+                    </p>
+                  </div>
+                </div>
+
+                {/* Emails */}
+                <div className="w-[48%] flex gap-2">
+                  <Mails strokeWidth={1.5} className="text-white" size={38} />
+                  <div>
+                    <h3 className="text-red text-xl font-oswald font-semibold mb-0.5">
+                      Company Email
+                    </h3>
+                    <a
+                      href="#"
+                      className="text-sm text-white font-sans font-light block hover:text-[#ff8383] transition"
+                    >
+                      smartwatch@gmail.com
+                    </a>
+                  </div>
+                </div>
+                {/* Websites */}
+                <div className="w-[48%] flex gap-2">
+                  <Earth strokeWidth={1.5} className="text-white" size={38} />
+                  <div>
+                    <h3 className="text-red text-xl font-oswald font-semibold mb-0.5">
+                      Website Links
+                    </h3>
+                    <a
+                      href="#"
+                      className="text-sm text-white font-sans font-light block hover:text-[#ff8383] transition"
+                    >
+                      Https://SmartWatch.com
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
