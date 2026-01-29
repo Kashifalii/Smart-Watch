@@ -19,3 +19,11 @@
   --shadow-center: 0px 0px 4px rgba(0, 0, 0, 0.5);
   --shadow-sm: 0px 0px 4px rgba(0, 0, 0, 0.3);
 }
+
+.swiper-slide {
+  pointer-events: none;
+}
+
+.swiper-slide-active {
+  pointer-events: auto;
+}

@@ -83,7 +83,10 @@ export default function Navbar({
         <span className="mx-2 h-6 w-px bg-white/20" />
 
         {/* Cart */}
-        <button className="group flex items-center gap-2 rounded-full px-4 py-2 transition-all duration-300 hover:bg-white/10">
+        <a
+          href="/order"
+          className="group flex items-center gap-2 rounded-full px-4 py-2 transition-all duration-300 hover:bg-white/10"
+        >
           <ShoppingCart
             size={18}
             className="text-white transition-colors duration-300 group-hover:text-red"
@@ -91,7 +94,7 @@ export default function Navbar({
           <span className="text-sm font-semibold text-white transition-colors duration-300 group-hover:text-red">
             {price}
           </span>
-        </button>
+        </a>
       </div>
     </motion.nav>
   );
