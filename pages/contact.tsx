@@ -141,7 +141,7 @@ function ContactPage({ isActive }: { isActive: boolean }) {
             initial={{ x: 500, opacity: 0 }}
             animate={isActive ? { x: 0, opacity: 1 } : { x: 500, opacity: 0 }}
             transition={{ duration: 1.2 }}
-            className="h-175 w-[40%] rounded-e-xl rounded-be-xl bg-[url('/Images/form-bg.png')] flex items-end"
+            className="h-175 w-[40%] rounded-e-xl rounded-ee-xl overflow-hidden bg-[url('/Images/form-bg.png')] flex items-end"
           >
             {/* contact-details */}
             <div className="w-full h-auto p-7 bg-[url('/Images/form-overlay.png')] bg-[#05050571] backdrop-blur-sm">

@@ -10,6 +10,7 @@ import {
   ShoppingCart,
 } from "lucide-react";
 import type { Swiper as SwiperType } from "swiper";
+import { motion } from "framer-motion";
 
 interface NavbarProps {
   swiperRef: RefObject<SwiperType | null>;
@@ -41,8 +42,8 @@ export default function Navbar({
   };
 
   return (
-    <nav className="fixed top-6 left-1/2 z-50 -translate-x-1/2">
-      <div className="flex items-center gap-2 rounded-full bg-black px-4 py-2 backdrop-blur-md shadow-center shadow-red ">
+    <motion.nav className="fixed top-0 left-1/2 z-50 -translate-x-1/2">
+      <div className="flex items-center gap-2 rounded-bl-3xl rounded-br-3xl bg-black px-3  py-3 backdrop-blur-md shadow-center shadow-red ">
         {NAV_ITEMS.map((item) => {
           const Icon = item.icon;
           const isActive = activeIndex === item.slideIndex;
@@ -92,6 +93,6 @@ export default function Navbar({
           </span>
         </button>
       </div>
-    </nav>
+    </motion.nav>
   );
 }
