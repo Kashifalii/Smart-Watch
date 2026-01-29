@@ -201,16 +201,16 @@ export default function ProductOrderPage() {
           {/* Right Column - Product Details */}
           <div className="w-full">
             <div className="mb-4">
-              <p className="text-gray-400 text-sm mb-2">
+              <p className="text-gray-400 text-sm font-sans mb-2">
                 Product Code: #233455
               </p>
-              <h1 className="text-3xl lg:text-4xl font-bold mb-4">
+              <h1 className="text-3xl lg:text-4xl font-bold font-oswald mb-4">
                 <span className="text-red">SMART WATCH CHRONOX</span>
                 <span className="text-white"> — BLACK SILVER</span>
               </h1>
             </div>
 
-            <p className="text-gray-300 mb-8 leading-relaxed">
+            <p className="text-gray-300 mb-8 font-sans leading-relaxed">
               <span className="font-bold text-white">ChronoX</span>, we believe
               a watch is more than a timepiece—it's a statement. Each design
               blends precision engineering with refined aesthetics to deliver.
@@ -280,7 +280,7 @@ export default function ProductOrderPage() {
 
             <div className="border-t border-gray-700 pt-6 mb-8">
               <div className="mb-6">
-                <p className="text-red text-3xl font-bold mb-2">
+                <p className="text-red text-3xl font-bold font-oswald mb-2">
                   $100/Pkr 28,000
                 </p>
                 <p className="text-gray-500 line-through text-lg">
@@ -291,7 +291,7 @@ export default function ProductOrderPage() {
               <div className="flex gap-4 mb-6">
                 <button
                   onClick={handleOrderNow}
-                  className="flex-1 bg-red hover:bg-red-500 text-white font-bold py-4 px-8 rounded-lg transition-colors shadow-lg hover:shadow-xl"
+                  className="flex-1 bg-red hover:bg-red-500 text-white font-bold  py-4 px-8 rounded-lg transition-colors shadow-lg hover:shadow-xl"
                 >
                   Order Now
                 </button>
