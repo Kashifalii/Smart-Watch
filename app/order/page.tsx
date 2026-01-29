@@ -90,90 +90,13 @@ export default function ProductOrderPage() {
           {/* Left Column - Product Image */}
           <div className="w-full">
             <div className="bg-linear-to-br from-red-400 via-red to-red-600 rounded-3xl p-8 lg:p-16 aspect-square flex items-center justify-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-linear-to-tr from-red/50 to-transparent"></div>
-              <div className="relative z-10 flex items-center justify-center gap-8">
-                {/* Main Watch */}
-                <div className="relative">
-                  <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full bg-black border-8 border-gray-800 flex items-center justify-center relative shadow-2xl">
-                    <div className="absolute inset-0 rounded-full border-4 border-red"></div>
-                    <div className="w-40 h-40 lg:w-56 lg:h-56 rounded-full bg-linear-to-br from-gray-900 to-black flex items-center justify-center relative">
-                      {/* Clock Face */}
-                      <div className="absolute top-4 text-white font-bold text-lg">
-                        12
-                      </div>
-                      <div className="absolute bottom-4 text-white font-bold text-lg">
-                        6
-                      </div>
-                      <div className="absolute left-4 text-white font-bold text-lg">
-                        9
-                      </div>
-                      <div className="absolute right-4 text-white font-bold text-lg">
-                        3
-                      </div>
-
-                      {/* Hour Hand */}
-                      <div
-                        className="absolute w-1 h-12 bg-white rounded-full origin-bottom transform -rotate-45"
-                        style={{ bottom: "50%" }}
-                      ></div>
-                      {/* Minute Hand */}
-                      <div
-                        className="absolute w-1 h-16 bg-white rounded-full origin-bottom transform rotate-90"
-                        style={{ bottom: "50%" }}
-                      ></div>
-                      {/* Second Hand */}
-                      <div
-                        className="absolute w-0.5 h-20 bg-red rounded-full origin-bottom transform rotate-180"
-                        style={{ bottom: "50%" }}
-                      ></div>
-
-                      {/* Center Dot */}
-                      <div className="absolute w-3 h-3 bg-red rounded-full"></div>
-                    </div>
-                  </div>
-                  {/* Watch Strap Top */}
-                  <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 w-20 h-16 bg-gray-800 rounded-t-3xl"></div>
-                  {/* Watch Strap Bottom */}
-                  <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 w-20 h-16 bg-gray-800 rounded-b-3xl"></div>
-                </div>
-
-                {/* Small Watch */}
-                <div className="relative -ml-4">
-                  <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full bg-linear-to-br from-gray-700 to-gray-900 border-4 border-gray-600 flex items-center justify-center relative shadow-xl">
-                    <div className="absolute inset-2 rounded-full border-2 border-red"></div>
-                    <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-full bg-black flex items-center justify-center relative">
-                      {/* Small Clock Numbers */}
-                      <div className="absolute top-2 text-white text-xs font-bold">
-                        12
-                      </div>
-                      <div className="absolute bottom-2 text-white text-xs font-bold">
-                        6
-                      </div>
-                      <div className="absolute left-2 text-white text-xs font-bold">
-                        9
-                      </div>
-                      <div className="absolute right-2 text-white text-xs font-bold">
-                        3
-                      </div>
-
-                      {/* Small Hands */}
-                      <div
-                        className="absolute w-0.5 h-6 bg-white rounded-full origin-bottom transform -rotate-45"
-                        style={{ bottom: "50%" }}
-                      ></div>
-                      <div
-                        className="absolute w-0.5 h-8 bg-white rounded-full origin-bottom transform rotate-90"
-                        style={{ bottom: "50%" }}
-                      ></div>
-                      <div className="absolute w-2 h-2 bg-red rounded-full"></div>
-                    </div>
-                    {/* Side Button */}
-                    <div className="absolute right-0 top-1/2 transform translate-x-2 -translate-y-1/2 w-4 h-8 bg-gray-600 rounded-r-lg"></div>
-                  </div>
-                  {/* Small Watch Strap */}
-                  <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gray-700 rounded-b-3xl"></div>
-                </div>
-              </div>
+              {/* watch */}
+              <img src="/Images/c1.webp" alt="" />
+              <img
+                src="/Images/c2.webp"
+                alt=""
+                className="size-60 bottom-15 right-10 absolute"
+              />
             </div>
 
             {/* Reviews Section - Desktop */}
