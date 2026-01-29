@@ -44,7 +44,7 @@ export default function SwiperComp() {
         effect="fade"
         fadeEffect={{ crossFade: true }}
         speed={1400}
-        allowTouchMove
+        allowTouchMove={false}
         modules={[Navigation, EffectFade]}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
