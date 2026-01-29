@@ -231,7 +231,7 @@ export default function CompleteOrderPage() {
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-400">Total:</span>
-                <span className="font-semibold text-red-500">
+                <span className="font-semibold text-red">
                   $100 / Pkr 28,000
                 </span>
               </div>
@@ -278,7 +278,7 @@ export default function CompleteOrderPage() {
               {/* Personal Information */}
               <div className="bg-gray-800 rounded-2xl p-6 lg:p-8">
                 <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-                  <span className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-sm">
+                  <span className="w-8 h-8 bg-red rounded-full flex items-center justify-center text-sm">
                     1
                   </span>
                   Personal Information
@@ -295,12 +295,12 @@ export default function CompleteOrderPage() {
                       value={formData.fullName}
                       onChange={handleInputChange}
                       className={`w-full px-4 py-3 bg-gray-900 border-2 ${
-                        errors.fullName ? "border-red-500" : "border-gray-700"
-                      } rounded-lg focus:outline-none focus:border-red-500 transition-colors`}
+                        errors.fullName ? "border-red" : "border-gray-700"
+                      } rounded-lg focus:outline-none focus:border-red transition-colors`}
                       placeholder="John Doe"
                     />
                     {errors.fullName && (
-                      <p className="text-red-500 text-xs mt-1 flex items-center gap-1">
+                      <p className="text-red text-xs mt-1 flex items-center gap-1">
                         <AlertCircle className="w-3 h-3" /> {errors.fullName}
                       </p>
                     )}
@@ -316,12 +316,12 @@ export default function CompleteOrderPage() {
                       value={formData.email}
                       onChange={handleInputChange}
                       className={`w-full px-4 py-3 bg-gray-900 border-2 ${
-                        errors.email ? "border-red-500" : "border-gray-700"
-                      } rounded-lg focus:outline-none focus:border-red-500 transition-colors`}
+                        errors.email ? "border-red" : "border-gray-700"
+                      } rounded-lg focus:outline-none focus:border-red transition-colors`}
                       placeholder="john@example.com"
                     />
                     {errors.email && (
-                      <p className="text-red-500 text-xs mt-1 flex items-center gap-1">
+                      <p className="text-red text-xs mt-1 flex items-center gap-1">
                         <AlertCircle className="w-3 h-3" /> {errors.email}
                       </p>
                     )}
@@ -337,12 +337,12 @@ export default function CompleteOrderPage() {
                       value={formData.phone}
                       onChange={handleInputChange}
                       className={`w-full px-4 py-3 bg-gray-900 border-2 ${
-                        errors.phone ? "border-red-500" : "border-gray-700"
-                      } rounded-lg focus:outline-none focus:border-red-500 transition-colors`}
+                        errors.phone ? "border-red" : "border-gray-700"
+                      } rounded-lg focus:outline-none focus:border-red transition-colors`}
                       placeholder="+1 (555) 123-4567"
                     />
                     {errors.phone && (
-                      <p className="text-red-500 text-xs mt-1 flex items-center gap-1">
+                      <p className="text-red text-xs mt-1 flex items-center gap-1">
                         <AlertCircle className="w-3 h-3" /> {errors.phone}
                       </p>
                     )}
@@ -358,12 +358,12 @@ export default function CompleteOrderPage() {
                       value={formData.address}
                       onChange={handleInputChange}
                       className={`w-full px-4 py-3 bg-gray-900 border-2 ${
-                        errors.address ? "border-red-500" : "border-gray-700"
-                      } rounded-lg focus:outline-none focus:border-red-500 transition-colors`}
+                        errors.address ? "border-red" : "border-gray-700"
+                      } rounded-lg focus:outline-none focus:border-red transition-colors`}
                       placeholder="123 Main Street, Apartment 4B"
                     />
                     {errors.address && (
-                      <p className="text-red-500 text-xs mt-1 flex items-center gap-1">
+                      <p className="text-red text-xs mt-1 flex items-center gap-1">
                         <AlertCircle className="w-3 h-3" /> {errors.address}
                       </p>
                     )}
@@ -379,12 +379,12 @@ export default function CompleteOrderPage() {
                       value={formData.city}
                       onChange={handleInputChange}
                       className={`w-full px-4 py-3 bg-gray-900 border-2 ${
-                        errors.city ? "border-red-500" : "border-gray-700"
-                      } rounded-lg focus:outline-none focus:border-red-500 transition-colors`}
+                        errors.city ? "border-red" : "border-gray-700"
+                      } rounded-lg focus:outline-none focus:border-red transition-colors`}
                       placeholder="New York"
                     />
                     {errors.city && (
-                      <p className="text-red-500 text-xs mt-1 flex items-center gap-1">
+                      <p className="text-red text-xs mt-1 flex items-center gap-1">
                         <AlertCircle className="w-3 h-3" /> {errors.city}
                       </p>
                     )}
@@ -400,12 +400,12 @@ export default function CompleteOrderPage() {
                       value={formData.zipCode}
                       onChange={handleInputChange}
                       className={`w-full px-4 py-3 bg-gray-900 border-2 ${
-                        errors.zipCode ? "border-red-500" : "border-gray-700"
-                      } rounded-lg focus:outline-none focus:border-red-500 transition-colors`}
+                        errors.zipCode ? "border-red" : "border-gray-700"
+                      } rounded-lg focus:outline-none focus:border-red transition-colors`}
                       placeholder="10001"
                     />
                     {errors.zipCode && (
-                      <p className="text-red-500 text-xs mt-1 flex items-center gap-1">
+                      <p className="text-red text-xs mt-1 flex items-center gap-1">
                         <AlertCircle className="w-3 h-3" /> {errors.zipCode}
                       </p>
                     )}
@@ -420,8 +420,8 @@ export default function CompleteOrderPage() {
                       value={formData.country}
                       onChange={handleInputChange}
                       className={`w-full px-4 py-3 bg-gray-900 border-2 ${
-                        errors.country ? "border-red-500" : "border-gray-700"
-                      } rounded-lg focus:outline-none focus:border-red-500 transition-colors`}
+                        errors.country ? "border-red" : "border-gray-700"
+                      } rounded-lg focus:outline-none focus:border-red transition-colors`}
                     >
                       <option value="">Select Country</option>
                       <option value="US">United States</option>
@@ -433,7 +433,7 @@ export default function CompleteOrderPage() {
                       <option value="Other">Other</option>
                     </select>
                     {errors.country && (
-                      <p className="text-red-500 text-xs mt-1 flex items-center gap-1">
+                      <p className="text-red text-xs mt-1 flex items-center gap-1">
                         <AlertCircle className="w-3 h-3" /> {errors.country}
                       </p>
                     )}
@@ -444,7 +444,7 @@ export default function CompleteOrderPage() {
               {/* Payment Method Selection */}
               <div className="bg-gray-800 rounded-2xl p-6 lg:p-8">
                 <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-                  <span className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-sm">
+                  <span className="w-8 h-8 bg-red rounded-full flex items-center justify-center text-sm">
                     2
                   </span>
                   Payment Method
@@ -458,7 +458,7 @@ export default function CompleteOrderPage() {
                       onClick={() => setSelectedPayment(method.id)}
                       className={`p-4 rounded-lg border-2 transition-all ${
                         selectedPayment === method.id
-                          ? "border-red-500 bg-red-500/10"
+                          ? "border-red bg-red/10"
                           : "border-gray-700 hover:border-gray-600"
                       }`}
                     >
@@ -481,13 +481,13 @@ export default function CompleteOrderPage() {
                       value={formData.cardNumber}
                       onChange={handleCardNumberChange}
                       className={`w-full px-4 py-3 bg-gray-900 border-2 ${
-                        errors.cardNumber ? "border-red-500" : "border-gray-700"
-                      } rounded-lg focus:outline-none focus:border-red-500 transition-colors`}
+                        errors.cardNumber ? "border-red" : "border-gray-700"
+                      } rounded-lg focus:outline-none focus:border-red transition-colors`}
                       placeholder="1234 5678 9012 3456"
                       maxLength={19}
                     />
                     {errors.cardNumber && (
-                      <p className="text-red-500 text-xs mt-1 flex items-center gap-1">
+                      <p className="text-red text-xs mt-1 flex items-center gap-1">
                         <AlertCircle className="w-3 h-3" /> {errors.cardNumber}
                       </p>
                     )}
@@ -503,12 +503,12 @@ export default function CompleteOrderPage() {
                       value={formData.cardName}
                       onChange={handleInputChange}
                       className={`w-full px-4 py-3 bg-gray-900 border-2 ${
-                        errors.cardName ? "border-red-500" : "border-gray-700"
-                      } rounded-lg focus:outline-none focus:border-red-500 transition-colors`}
+                        errors.cardName ? "border-red" : "border-gray-700"
+                      } rounded-lg focus:outline-none focus:border-red transition-colors`}
                       placeholder="JOHN DOE"
                     />
                     {errors.cardName && (
-                      <p className="text-red-500 text-xs mt-1 flex items-center gap-1">
+                      <p className="text-red text-xs mt-1 flex items-center gap-1">
                         <AlertCircle className="w-3 h-3" /> {errors.cardName}
                       </p>
                     )}
@@ -524,13 +524,13 @@ export default function CompleteOrderPage() {
                       value={formData.expiryDate}
                       onChange={handleExpiryDateChange}
                       className={`w-full px-4 py-3 bg-gray-900 border-2 ${
-                        errors.expiryDate ? "border-red-500" : "border-gray-700"
-                      } rounded-lg focus:outline-none focus:border-red-500 transition-colors`}
+                        errors.expiryDate ? "border-red" : "border-gray-700"
+                      } rounded-lg focus:outline-none focus:border-red transition-colors`}
                       placeholder="MM/YY"
                       maxLength={5}
                     />
                     {errors.expiryDate && (
-                      <p className="text-red-500 text-xs mt-1 flex items-center gap-1">
+                      <p className="text-red text-xs mt-1 flex items-center gap-1">
                         <AlertCircle className="w-3 h-3" /> {errors.expiryDate}
                       </p>
                     )}
@@ -546,13 +546,13 @@ export default function CompleteOrderPage() {
                       value={formData.cvv}
                       onChange={handleCvvChange}
                       className={`w-full px-4 py-3 bg-gray-900 border-2 ${
-                        errors.cvv ? "border-red-500" : "border-gray-700"
-                      } rounded-lg focus:outline-none focus:border-red-500 transition-colors`}
+                        errors.cvv ? "border-red" : "border-gray-700"
+                      } rounded-lg focus:outline-none focus:border-red transition-colors`}
                       placeholder="123"
                       maxLength={4}
                     />
                     {errors.cvv && (
-                      <p className="text-red-500 text-xs mt-1 flex items-center gap-1">
+                      <p className="text-red text-xs mt-1 flex items-center gap-1">
                         <AlertCircle className="w-3 h-3" /> {errors.cvv}
                       </p>
                     )}
@@ -576,21 +576,21 @@ export default function CompleteOrderPage() {
                       });
                     }
                   }}
-                  className="w-5 h-5 mt-0.5 accent-red-500"
+                  className="w-5 h-5 mt-0.5 accent-red"
                 />
                 <label htmlFor="terms" className="text-sm text-gray-300">
                   I agree to the{" "}
-                  <a href="#" className="text-red-500 hover:text-red-400">
+                  <a href="#" className="text-red hover:text-red-400">
                     Terms and Conditions
                   </a>{" "}
                   and{" "}
-                  <a href="#" className="text-red-500 hover:text-red-400">
+                  <a href="#" className="text-red hover:text-red-400">
                     Privacy Policy
                   </a>
                 </label>
               </div>
               {errors.terms && (
-                <p className="text-red-500 text-sm flex items-center gap-1">
+                <p className="text-red text-sm flex items-center gap-1">
                   <AlertCircle className="w-4 h-4" /> {errors.terms}
                 </p>
               )}
@@ -602,10 +602,10 @@ export default function CompleteOrderPage() {
                 <h2 className="text-2xl font-bold mb-6">Order Summary</h2>
 
                 <div className="mb-6">
-                  <div className="bg-gradient-to-br from-red-400 to-red-600 rounded-xl p-4 mb-4">
+                  <div className="bg-linear-to-br from-red-400 to-red rounded-xl p-4 mb-4">
                     <div className="flex items-center justify-center">
                       <div className="w-24 h-24 rounded-full bg-black border-4 border-gray-800 flex items-center justify-center relative">
-                        <div className="absolute inset-0 rounded-full border-2 border-red-500"></div>
+                        <div className="absolute inset-0 rounded-full border-2 border-red"></div>
                         <div className="text-white text-xs">ChronoX</div>
                       </div>
                     </div>
@@ -637,7 +637,7 @@ export default function CompleteOrderPage() {
                 <div className="flex justify-between items-center mb-6 pb-6 border-b border-gray-700">
                   <span className="text-lg font-bold">Total</span>
                   <div className="text-right">
-                    <p className="text-2xl font-bold text-red-500">$100.00</p>
+                    <p className="text-2xl font-bold text-red">$100.00</p>
                     <p className="text-sm text-gray-400">Pkr 28,000</p>
                   </div>
                 </div>
@@ -645,7 +645,7 @@ export default function CompleteOrderPage() {
                 <button
                   type="submit"
                   disabled={isProcessing}
-                  className="w-full bg-red-500 hover:bg-red-600 disabled:bg-gray-600 text-white font-bold py-4 px-8 rounded-lg transition-colors shadow-lg hover:shadow-xl flex items-center justify-center gap-2 disabled:cursor-not-allowed"
+                  className="w-full bg-red hover:bg-red disabled:bg-gray-600 text-white font-bold py-4 px-8 rounded-lg transition-colors shadow-lg hover:shadow-xl flex items-center justify-center gap-2 disabled:cursor-not-allowed"
                 >
                   {isProcessing ? (
                     <>

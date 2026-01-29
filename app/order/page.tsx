@@ -16,7 +16,7 @@ export default function ProductOrderPage() {
   const colors: Array<{ name: string; bgClass: string; borderClass: string }> =
     [
       { name: "white", bgClass: "bg-white", borderClass: "border-gray-300" },
-      { name: "red", bgClass: "bg-red-500", borderClass: "border-red-500" },
+      { name: "red", bgClass: "bg-red", borderClass: "border-red" },
       { name: "gray", bgClass: "bg-gray-400", borderClass: "border-gray-400" },
       { name: "black", bgClass: "bg-black", borderClass: "border-black" },
       {
@@ -66,7 +66,7 @@ export default function ProductOrderPage() {
     }, 500);
   };
 
-  const renderStars = (rating: number): JSX.Element => {
+  const renderStars = (rating: number): React.JSX.Element => {
     return (
       <div className="flex gap-1">
         {[1, 2, 3, 4, 5].map((star) => (
@@ -74,7 +74,7 @@ export default function ProductOrderPage() {
             key={star}
             className={`w-3 h-3 ${
               star <= rating
-                ? "fill-red-500 text-red-500"
+                ? "fill-red text-red"
                 : "fill-gray-600 text-gray-600"
             }`}
           />
@@ -89,14 +89,14 @@ export default function ProductOrderPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           {/* Left Column - Product Image */}
           <div className="w-full">
-            <div className="bg-gradient-to-br from-red-400 via-red-500 to-red-600 rounded-3xl p-8 lg:p-16 aspect-square flex items-center justify-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-tr from-red-500/50 to-transparent"></div>
+            <div className="bg-linear-to-br from-red-400 via-red to-red-600 rounded-3xl p-8 lg:p-16 aspect-square flex items-center justify-center relative overflow-hidden">
+              <div className="absolute inset-0 bg-linear-to-tr from-red/50 to-transparent"></div>
               <div className="relative z-10 flex items-center justify-center gap-8">
                 {/* Main Watch */}
                 <div className="relative">
                   <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full bg-black border-8 border-gray-800 flex items-center justify-center relative shadow-2xl">
-                    <div className="absolute inset-0 rounded-full border-4 border-red-500"></div>
-                    <div className="w-40 h-40 lg:w-56 lg:h-56 rounded-full bg-gradient-to-br from-gray-900 to-black flex items-center justify-center relative">
+                    <div className="absolute inset-0 rounded-full border-4 border-red"></div>
+                    <div className="w-40 h-40 lg:w-56 lg:h-56 rounded-full bg-linear-to-br from-gray-900 to-black flex items-center justify-center relative">
                       {/* Clock Face */}
                       <div className="absolute top-4 text-white font-bold text-lg">
                         12
@@ -123,12 +123,12 @@ export default function ProductOrderPage() {
                       ></div>
                       {/* Second Hand */}
                       <div
-                        className="absolute w-0.5 h-20 bg-red-500 rounded-full origin-bottom transform rotate-180"
+                        className="absolute w-0.5 h-20 bg-red rounded-full origin-bottom transform rotate-180"
                         style={{ bottom: "50%" }}
                       ></div>
 
                       {/* Center Dot */}
-                      <div className="absolute w-3 h-3 bg-red-500 rounded-full"></div>
+                      <div className="absolute w-3 h-3 bg-red rounded-full"></div>
                     </div>
                   </div>
                   {/* Watch Strap Top */}
@@ -139,8 +139,8 @@ export default function ProductOrderPage() {
 
                 {/* Small Watch */}
                 <div className="relative -ml-4">
-                  <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full bg-gradient-to-br from-gray-700 to-gray-900 border-4 border-gray-600 flex items-center justify-center relative shadow-xl">
-                    <div className="absolute inset-2 rounded-full border-2 border-red-500"></div>
+                  <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full bg-linear-to-br from-gray-700 to-gray-900 border-4 border-gray-600 flex items-center justify-center relative shadow-xl">
+                    <div className="absolute inset-2 rounded-full border-2 border-red"></div>
                     <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-full bg-black flex items-center justify-center relative">
                       {/* Small Clock Numbers */}
                       <div className="absolute top-2 text-white text-xs font-bold">
@@ -165,7 +165,7 @@ export default function ProductOrderPage() {
                         className="absolute w-0.5 h-8 bg-white rounded-full origin-bottom transform rotate-90"
                         style={{ bottom: "50%" }}
                       ></div>
-                      <div className="absolute w-2 h-2 bg-red-500 rounded-full"></div>
+                      <div className="absolute w-2 h-2 bg-red rounded-full"></div>
                     </div>
                     {/* Side Button */}
                     <div className="absolute right-0 top-1/2 transform translate-x-2 -translate-y-1/2 w-4 h-8 bg-gray-600 rounded-r-lg"></div>
@@ -205,7 +205,7 @@ export default function ProductOrderPage() {
                 Product Code: #233455
               </p>
               <h1 className="text-3xl lg:text-4xl font-bold mb-4">
-                <span className="text-red-500">SMART WATCH CHRONOX</span>
+                <span className="text-red">SMART WATCH CHRONOX</span>
                 <span className="text-white"> — BLACK SILVER</span>
               </h1>
             </div>
@@ -272,7 +272,7 @@ export default function ProductOrderPage() {
                   )}
                 </div>
 
-                <button className="px-6 py-3 text-sm font-semibold hover:text-red-500 transition-colors whitespace-nowrap">
+                <button className="px-6 py-3 text-sm font-semibold hover:text-red transition-colors whitespace-nowrap">
                   Size Guides
                 </button>
               </div>
@@ -280,7 +280,7 @@ export default function ProductOrderPage() {
 
             <div className="border-t border-gray-700 pt-6 mb-8">
               <div className="mb-6">
-                <p className="text-red-500 text-3xl font-bold mb-2">
+                <p className="text-red text-3xl font-bold mb-2">
                   $100/Pkr 28,000
                 </p>
                 <p className="text-gray-500 line-through text-lg">
@@ -291,7 +291,7 @@ export default function ProductOrderPage() {
               <div className="flex gap-4 mb-6">
                 <button
                   onClick={handleOrderNow}
-                  className="flex-1 bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-8 rounded-lg transition-colors shadow-lg hover:shadow-xl"
+                  className="flex-1 bg-red hover:bg-red-600 text-white font-bold py-4 px-8 rounded-lg transition-colors shadow-lg hover:shadow-xl"
                 >
                   Order Now
                 </button>
