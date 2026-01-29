@@ -67,7 +67,7 @@ function HomePage({ isActive }: { isActive: boolean }) {
               moment.
             </p>
             <a
-              href={"#"}
+              href={"/order"}
               className="text-[42px] font-oswald font-semibold text-white cursor-pointer"
             >
               Order Now <MoveRight className="inline size-10" />

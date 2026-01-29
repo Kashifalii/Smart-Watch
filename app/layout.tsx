@@ -18,7 +18,7 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  title: "Smart Watch",
+  title: "Smart Watch -ChoronX Series",
   description: "Smart Watch By Kashif Ali- ecommarce website",
 };
 

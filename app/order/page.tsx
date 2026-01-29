@@ -291,7 +291,7 @@ export default function ProductOrderPage() {
               <div className="flex gap-4 mb-6">
                 <button
                   onClick={handleOrderNow}
-                  className="flex-1 bg-red hover:bg-red-600 text-white font-bold py-4 px-8 rounded-lg transition-colors shadow-lg hover:shadow-xl"
+                  className="flex-1 bg-red hover:bg-red-500 text-white font-bold py-4 px-8 rounded-lg transition-colors shadow-lg hover:shadow-xl"
                 >
                   Order Now
                 </button>
@@ -302,36 +302,6 @@ export default function ProductOrderPage() {
                 >
                   {isWaitlisted ? "Added!" : "Waitlist"}
                 </button>
-              </div>
-
-              <div className="flex items-center gap-2 text-sm text-gray-400 mb-2">
-                <span className="font-bold text-white">or</span>
-              </div>
-
-              <div>
-                <p className="text-sm font-bold mb-3">COMPLETE ORDER</p>
-                <div className="flex gap-3">
-                  <img
-                    src="/api/placeholder/50/32"
-                    alt="Visa"
-                    className="h-8 bg-white rounded px-2"
-                  />
-                  <img
-                    src="/api/placeholder/50/32"
-                    alt="Mastercard"
-                    className="h-8 bg-white rounded px-2"
-                  />
-                  <img
-                    src="/api/placeholder/50/32"
-                    alt="Amex"
-                    className="h-8 bg-white rounded px-2"
-                  />
-                  <img
-                    src="/api/placeholder/50/32"
-                    alt="Discover"
-                    className="h-8 bg-white rounded px-2"
-                  />
-                </div>
               </div>
             </div>
           </div>
