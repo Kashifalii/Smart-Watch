@@ -421,7 +421,7 @@ export default function CompleteOrderPage() {
                       onChange={handleInputChange}
                       className={`w-full px-4 py-3 bg-gray-900 border-2 ${
                         errors.country ? "border-red" : "border-gray-700"
-                      } rounded-lg focus:outline-none focus:border-red transition-colors`}
+                      } rounded-lg appearance-none focus:outline-none focus:border-red transition-colors`}
                     >
                       <option value="">Select Country</option>
                       <option value="US">United States</option>
